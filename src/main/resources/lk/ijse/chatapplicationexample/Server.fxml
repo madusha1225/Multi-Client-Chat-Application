@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="524.0" prefWidth="784.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatapplicationexample.ServerController">
+   <children>
+      <Label layoutX="345.0" layoutY="14.0" text="Server">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="serverTextArea" editable="false" layoutX="31.0" layoutY="87.0" prefHeight="200.0" prefWidth="318.0" promptText="Message View" />
+      <TextField fx:id="serverTextField" layoutX="31.0" layoutY="326.0" prefHeight="25.0" prefWidth="265.0" promptText="Type Message" />
+      <JFXButton layoutX="310.0" layoutY="326.0" onAction="#serverSendBtnOnAction" style="-fx-background-color: black;" text="Send" textFill="WHITE" />
+      <JFXButton layoutX="31.0" layoutY="378.0" onAction="#serverSendImageBtnOnAction" style="-fx-background-color: black;" text="Send Image" textFill="WHITE" />
+      <JFXButton layoutX="132.0" layoutY="378.0" onAction="#serverSendFileBtnOnAction" style="-fx-background-color: black;" text="Send File" textFill="WHITE" />
+      <ImageView fx:id="serverImageView" fitHeight="200.0" fitWidth="309.0" layoutX="452.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="serverFileTextArea" editable="false" layoutX="444.0" layoutY="87.0" prefHeight="200.0" prefWidth="317.0" promptText="File View" />
+      <Button fx:id="btnDisconnect" layoutX="217.0" layoutY="377.0" mnemonicParsing="false" onAction="#clientbtnDisconnectAction" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: Red;" text="Disconnect" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
